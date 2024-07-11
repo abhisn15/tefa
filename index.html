@@ -6,13 +6,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>TEFA 40</title>
 </head>
 
-<body>
-  <header class="fixed z-20 w-full bg-transparent">
+<body class="overflow-x-hidden">
+  <header class="fixed z-50 w-full bg-transparent text-white">
     <nav
-      class="w-full flex flex-wrap min-[1280px]:max-w-[1280px] mx-auto xl:flex-row justify-between items-center gap-[16px] px-10 pt-5 text-white">
+      class="w-full flex flex-wrap min-[1280px]:max-w-[1280px] mx-auto xl:flex-row justify-between items-center gap-[16px] px-10 py-5 ">
       <h1>LOGO</h1>
       <ul class="flex flex-row items-center gap-10">
         <li><a href="">Home</a></li>
@@ -24,24 +24,54 @@
     </nav>
   </header>
   <main>
-    <section
-      class="bg-[url('./assets/hero.svg')] bg-[#D22E2E] h-[100vh] w-full bg-cover"
-      id="hero-section">
-      <div class="h-[100vh] min-[1280px]:max-w-[1280px] mx-auto flex flex-col-reverse md:flex-row md:items-center md:justify-around">
+    <section class="bg-[url('./assets/hero.svg')] bg-[#D22E2E] h-[100vh] w-full bg-cover hero">
+      <div
+        class="h-[100vh] min-[1280px]:max-w-[1280px] mx-auto flex flex-col-reverse md:flex-row md:items-center md:justify-around">
         <div class="flex flex-col items-center mx-auto md:mx-0 md:items-start justify-center md:justify-start gap-10">
           <div class="flex flex-col items-center justify-center md:items-start md:justify-start text-white">
             <img src="./assets/hero-image.svg" alt="Dirgahayu" class="">
             <p class="md:text-xl">Promo besar satu set kaos anak spesial hari kemerdekaan</p>
           </div>
           <button
-          class="px-5 py-2 bg-white text-[#D22E2E] rounded-3xl transition-all duration-200 border-b-8 border-black hover:border-red-500">
-          <a href="#">Selengkapnya...</a>
-        </button>
+            class="px-5 py-2 bg-white text-[#D22E2E] rounded-3xl transition-all duration-200 border-b-8 border-black hover:border-red-500">
+            <a href="#">Selengkapnya...</a>
+          </button>
+        </div>
+        <img src="./assets/hero-79.svg" alt="79 Dirgahayu"></img>
       </div>
-      <img src="./assets/hero-79.svg" alt="79 Dirgahayu"></img>
-    </div>
+      <svg class="absolute bottom-[-70px] left-[10px] md:w-[1440px] md:h-[117px]" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="720" cy="58.5" rx="720" ry="58.1421" fill="#F3F4E5" />
+      </svg>
+    </section>
+    <section class="bg-[#F3F4E5] h-[100vh] w-full pt-20">
+      <div class="min-[1280px]:max-w-[1280px] flex flex-col gap-20 mx-auto">
+        <div class="text-center">
+          <h1 class="text-2xl text-black">Produk Kami</h1>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-10">
+          <div class="flex flex-col items-center justify-center gap-4">
+            <img src="./assets/image.png" alt="">
+            <p class="text-center">BERBAHAN SOFT KOTTON 24S SEHINGGA NYAMAN DAN LEMBUT SAAT DIPAKAI</p>
+          </div>
+          <div class="indent-8 text-xl text-center font-semibold leading-7">
+            <p>Koleksi baju kemerdekaan kami yang dirancang khusus untuk memperingati dan merayakan hari bersejarah 17
+              Agustus. Dengan
+              desain yang menggabungkan nuansa tradisional dan modern</p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets//style.svg" alt="" class="absolute right-0 z-20">
+    </section>
+    <section class="bg-[url('./assets/promo-produk.svg')] bg-[#D22E2E] w-full bg-cover h-[100vh]">
+      <svg class="relative top-[-90px] md:w-[1540px] md:h-[213px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="710.5" cy="106.5" rx="756.5" ry="106.5" fill="#F3F4E5" />
+      </svg>
+
+      <div></div>
     </section>
   </main>
+  <script src="./script.js"></script>
 </body>
 
 </html>

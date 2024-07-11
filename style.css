@@ -3,3 +3,8 @@
 * {
   font-family: 'Poppins', sans-serif;
 }
+
+header.scrolled {
+  background-color: #F3F4E5;
+  color: #D22E2E !important;
+}
