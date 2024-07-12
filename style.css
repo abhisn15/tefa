@@ -14,6 +14,14 @@ header.scrolled {
 	box-shadow: 2px 2px 2px #f3f4e5;
 }
 
+.desc {
+	text-shadow: 2px 2px #ffffff;
+}
+
+.text-shadow {
+	text-shadow: 2px 2px #000000;
+}
+
 .promo {
   -webkit-text-fill-color: white;
 	-webkit-text-stroke-width: 1.5px;
