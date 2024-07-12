@@ -5,23 +5,17 @@
 	font-family: "Poppins", sans-serif;
 }
 
-html,
-body,
-main {
-	overflow-x: hidden;
-}
-
 header.scrolled {
-	background-color: #f3f4e5;
+	background-color: #f3f4e560;
 	color: #d22e2e !important;
 }
 
-.text-shadow {
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
+.box-shadow {
+	box-shadow: 2px 2px 2px #f3f4e5;
+}
 
 .promo {
   -webkit-text-fill-color: white;
-	-webkit-text-stroke-width: 3px, ;
-	-webkit-text-stroke-color: #d22e2e;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: #f3f4e5;
 }
