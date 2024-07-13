@@ -43,13 +43,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Simulate loading for demonstration purposes
 	setTimeout(function () {
 		loadingScreen.classList.add("hidden-opacity");
+		page.classList.remove("overflow-hidden");
 		setTimeout(function () {
 			loadingScreen.style.display = "none";
 			content.classList.remove("hidden");
 			content.classList.add("visible");
 
 			// Remove the class to allow scrolling
-			page.classList.remove("overflow-hidden");
 		}, 1000); // 1000 milliseconds = 1 second to match the transition duration
 	}, 2000); // 2000 milliseconds = 2 seconds
 });
