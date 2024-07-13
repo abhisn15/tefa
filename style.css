@@ -46,11 +46,35 @@ header.scrolled {
   opacity: 0;
   transition: all .8s ease-in-out;
 		box-shadow: 2px 2px #fafafa;
-		z-index: 100;
+		z-index: 90;
 }
 
 .btnScrollToTop.active {
   bottom: 5px;
   pointer-events: auto;
   opacity: .9;
+}
+
+@keyframes loading {
+	0% {
+		opacity: 1;
+		scale: calc(1.1);
+	} 50% {
+		opacity: 0.5;
+		scale: calc(1);
+	} 100% {
+		opacity: 0.8;
+		scale: calc(1.1);
+	}
+}
+
+.loading {
+	animation: loading 2s linear infinite;
+}
+.hidden-opacity {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+.visible {
+	display: block;
 }
