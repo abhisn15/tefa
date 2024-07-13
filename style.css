@@ -22,7 +22,7 @@ header.scrolled {
 	text-shadow: 2px 2px #ff0000;
 }
 .text-shadow {
-	text-shadow: 2px 2px #000000;
+	text-shadow: 4px 4px #000000;
 }
 
 .promo {
@@ -125,6 +125,40 @@ header.scrolled {
 .logos-slide img {
 	height: 50px;
 	margin: 0 20px; /* Adjust spacing as needed */
+}
+
+@keyframes mengambang-kiri {
+  0% {
+    transform: translateY(0%) translateX(0%);
+  }
+  50% {
+    transform: translateY(10%) translateX(10%);
+  }
+  100% {
+    transform: translateY(0%) translateX(0%);
+  }
+}
+
+@keyframes mengambang-kanan {
+  0% {
+    transform: translateY(0%) translateX(0%);
+  }
+  50% {
+    transform: translateY(10%) translateX(-10%);
+  }
+  100% {
+    transform: translateY(0%) translateX(0%);
+  }
+}
+
+.panahKiri {
+  transition: all 2s;
+  animation: mengambang-kiri 2s infinite ease-in-out !important;
+}
+
+.panahKanan {
+  transition: all 2s;
+  animation: mengambang-kanan 2s infinite ease-in-out !important;
 }
 
 /* Media query untuk perangkat kecil */
