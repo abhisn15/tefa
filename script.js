@@ -1,3 +1,5 @@
+AOS.init();
+
 // Observer for header scroll effect
 const heroElement = document.querySelector("section.hero");
 const headerElement = document.querySelector("header");
@@ -52,4 +54,35 @@ document.addEventListener("DOMContentLoaded", function () {
 			// Remove the class to allow scrolling
 		}, 1000); // 1000 milliseconds = 1 second to match the transition duration
 	}, 2000); // 2000 milliseconds = 2 seconds
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+	const favicon = document.getElementById("favicon");
+
+	function updateFavicon() {
+		if (
+			window.matchMedia &&
+			window.matchMedia("(prefers-color-scheme: dark)").matches
+		) {
+			// Jika dark mode
+			favicon.href = "./assets/logo-putih.svg";
+		} else {
+			// Jika light mode
+			favicon.href = "./assets/logo.svg";
+		}
+	}
+
+	// Panggil fungsi saat halaman dimuat
+	updateFavicon();
+
+	// Pantau perubahan pada preferensi warna
+	if (window.matchMedia) {
+		window
+			.matchMedia("(prefers-color-scheme: dark)")
+			.addEventListener("change", updateFavicon);
+	}
+});
+document.addEventListener("DOMContentLoaded", function () {
+	var original = document.querySelector(".logos-slide");
+	var clone = original.cloneNode(true);
 });
