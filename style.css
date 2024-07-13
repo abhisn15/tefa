@@ -27,3 +27,30 @@ header.scrolled {
 	-webkit-text-stroke-width: 1.5px;
 	-webkit-text-stroke-color: #f3f4e5;
 }
+
+/* Back To Top */
+.btnScrollToTop {
+  position: fixed;
+  display: flex;
+  right: 10px;
+  bottom: -10%;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff0000;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  opacity: 0;
+  transition: all .8s ease-in-out;
+		box-shadow: 2px 2px #fafafa;
+		z-index: 100;
+}
+
+.btnScrollToTop.active {
+  bottom: 5px;
+  pointer-events: auto;
+  opacity: .9;
+}
