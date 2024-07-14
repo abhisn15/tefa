@@ -1,16 +1,20 @@
 AOS.init();
 
 // Observer for header scroll effect
+// Observer for header scroll effect
 const heroElement = document.querySelector("section.hero");
 const headerElement = document.querySelector("header");
+const logoElement = document.getElementById('logo');
 
 const heroObserver = new IntersectionObserver(
 	function (entries) {
 		const [entry] = entries;
 		if (!entry.isIntersecting) {
 			headerElement.classList.add("scrolled");
+			logoElement.src = "./assets/logo.svg"; // Kembalikan ke logo asli saat tidak di-scroll
 		} else {
 			headerElement.classList.remove("scrolled");
+			logoElement.src = "./assets/logo-putih.svg"; // Ganti href dengan src
 		}
 	},
 	{ threshold: 0.9 },
