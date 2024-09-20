@@ -1,6 +1,11 @@
 AOS.init();
 
-// Observer for header scroll effect
+// getFullYear
+const getYear = document.getElementById('getYear');
+const d = new Date();
+let year = d.getFullYear()
+getYear.innerHTML = year;
+
 // Observer for header scroll effect
 const heroElement = document.querySelector("section.hero");
 const headerElement = document.querySelector("header");
