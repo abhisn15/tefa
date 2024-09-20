@@ -90,3 +90,41 @@ document.addEventListener("DOMContentLoaded", function () {
 	var original = document.querySelector(".logos-slide");
 	var clone = original.cloneNode(true);
 });
+
+  // Ambil semua elemen tab
+  const tabs = document.querySelectorAll(".tabs h3");
+  const contents = document.querySelectorAll(".tab-content > div");
+
+  // Fungsi untuk menghilangkan kelas active
+  function removeActiveClass() {
+    tabs.forEach(tab => tab.classList.remove("active"));
+    contents.forEach(content => content.classList.remove("active"));
+  }
+
+  // Menambahkan event listener untuk setiap tab
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      removeActiveClass(); // Menghilangkan kelas active dari semua tab dan konten
+      tab.classList.add("active"); // Menambahkan kelas active pada tab yang diklik
+      contents[index].classList.add("active"); // Menampilkan konten yang sesuai dengan tab
+    });
+	});
+	
+  // Ambil semua elemen tab
+  const tabe = document.querySelectorAll(".tabe h3");
+  const konten = document.querySelectorAll(".tab-contents > div");
+
+  // Fungsi untuk menghilangkan kelas active
+  function menghapusClassActivet() {
+    tabe.forEach(teb => teb.classList.remove("activet"));
+    konten.forEach(kontens => kontens.classList.remove("activet"));
+  }
+
+  // Menambahkan event listener untuk setiap tab
+  tabe.forEach((teb, index) => {
+    teb.addEventListener("click", () => {
+      menghapusClassActivet(); // Menghilangkan kelas active dari semua tab dan konten
+      teb.classList.add("activet"); // Menambahkan kelas active pada tab yang diklik
+      konten[index].classList.add("activet"); // Menampilkan konten yang sesuai dengan tab
+    });
+  });

@@ -7,7 +7,7 @@
 
 header.scrolled {
 	background-color: #f3f4e5f7;
-	color: #d22e2e !important;
+	color: #30C5FF !important;
 }
 
 .box-shadow {
@@ -19,7 +19,7 @@ header.scrolled {
 }
 
 .text-produk {
-	text-shadow: 2px 2px #ff0000;
+	text-shadow: 2px 2px #30C5FF;
 }
 .text-shadow {
 	text-shadow: 4px 4px #000000;
@@ -41,7 +41,7 @@ header.scrolled {
 	height: 42px;
 	align-items: center;
 	justify-content: center;
-	background-color: #ff0000;
+	background-color: #30C5FF;
 	color: white;
 	cursor: pointer;
 	border: none;
@@ -161,6 +161,163 @@ header.scrolled {
   animation: mengambang-kanan 2s infinite ease-in-out !important;
 }
 
+.tabs {
+	padding: 10px;
+	background-color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+	border-radius: 20px;
+}
+.tabs > h3 {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  cursor: pointer;
+  font-weight: 600;
+	border-radius: 20px;
+}
+.tab-content {
+  padding: 50px 40px;
+}
+.tab-content > h4 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #000224;
+  font-weight: 600;
+}
+.tab-content > div {
+  text-align: justify;
+  line-height: 1.9;
+  letter-spacing: 0.4px;
+  color: #202238;
+}
+.tab-content > div {
+  display: none;
+}
+.tab-content .active {
+  display: block;
+}
+.tabs .active {
+	transition: all .5s;
+  background-color: #30C5FF;
+  color: #ffffff;
+}
+
+.tabe {
+	padding: 10px;
+	background-color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+	border-radius: 20px;
+}
+.tabe > h3 {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  cursor: pointer;
+  font-weight: 600;
+	border-radius: 20px;
+}
+.tab-contents {
+  padding: 50px 40px;
+}
+.tab-contents > h4 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #000224;
+  font-weight: 600;
+}
+.tab-contents > div {
+  text-align: justify;
+  line-height: 1.9;
+  letter-spacing: 0.4px;
+  color: #202238;
+}
+.tab-contents > div {
+  display: none;
+}
+.tab-contents .activet {
+  display: block;
+}
+.tabe .activet {
+	transition: all .5s;
+  background-color: #30C5FF;
+  color: #ffffff;
+}
+
+.swiper-pagination-bullet-active {
+	background: #f3f4e5;
+}
+
+.animate-bouncy {
+animation: mengambang-1 6s infinite ease-in !important;
+}
+
+.animate-bouncy2 {
+animation: mengambang-2 6s infinite ease-in !important;
+}
+
+.animate-spin {
+animation: spin 3s infinite ease-in !important;
+}
+
+.animate-spin2 {
+animation: spin2 10s infinite ease-in !important;
+}
+
+@keyframes mengambang-1 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(2%);
+  }
+  75% {
+    transform: translateY(-2%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes mengambang-2 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(2%);
+  }
+  75% {
+    transform: translateY(-2%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* Media query untuk perangkat kecil */
 @media screen and (max-width: 400px) {
 	@keyframes slide {

@@ -4,9 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <script src="https://cdn.tailwindcss.com"></script>
+  <meta
+    content="TefaFourty menyediakan produk-produk jasa pembuatan design kaos dan kartu e-money dengan kualitas yang elegant."
+    name="description" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link id="favicon" rel="icon" href="./assets/logo-putih.svg" type="image/svg">
   <link rel="stylesheet" href="style.css">
   <title>TEFA 40</title>
@@ -20,42 +24,45 @@
   </div>
   <header class="animate duration-500 fixed z-50 w-full bg-transparent text-white">
     <nav class="w-full flex min-[1280px]:max-w-[1280px] mx-auto justify-center items-center gap-[16px] px-10 py-5">
-      <img id="logo" src="./assets/logo-putih.svg" alt="" class="w-[50px] lg:w-[100px]">
+      <img id="logo" src="./assets/logo-putih.svg" alt="..." class="w-[50px] lg:w-[100px]">
     </nav>
   </header>
   <main class="overflow-hidden">
-    <section class="bg-[url('./assets/hero.svg')] bg-[#D22E2E] pb-20 w-full bg-cover hero">
+    <section class="bg-[url('./assets/hero.svg')] bg-[#30C5FF] pb-20 w-full bg-cover hero">
       <div
-        class="sm:py-20 lg:h-[100vh] min-[1280px]:max-w-[1280px] mx-auto flex flex-col-reverse lg:flex-row lg:items-center lg:justify-around ">
+        class="h-[100dvh] sm:py-20 min-[1280px]:max-w-[1280px] mx-auto flex flex-col-reverse lg:flex-row lg:items-center lg:justify-around ">
         <div class="flex flex-col items-center mx-auto lg:mx-0 lg:items-start justify-center lg:justify-start gap-10">
           <div
             class="flex flex-col items-center justify-center lg:items-start lg:justify-start text-white relative z-30">
-            <img src="./assets/hero-image.svg" alt="Dirgahayu" class="w-60 sm:w-auto">
-            <p class="lg:text-xl lg:w-[400px] text-center lg:text-start px-10 lg:px-0">Promo kaos spesial hari
-              kemerdekaan HUT
-              RI 79,
-              dan juga kami menerima
-              desain custom, klik selengkapnya untuk mengetahui info lebih lanjut</p>
+            <img src="./assets/HAPPY-TEACHER-DAY-TEXT-2.svg" alt="Dirgahayu" class="w-60 sm:w-auto">
+            <p class="lg:text-xl lg:w-[600px] text-center lg:text-start px-10 lg:px-0 drop-shadow">Selamat Hari Guru!
+              Sebagai bentuk
+              apresiasi untuk para pahlawan tanpa tanda jasa, kami hadirkan promo spesial Sebagai
+              apresiasi bagi para guru hebat, kami persembahkan penawaran khusus. Nikmati produk-produk pilihan dengan
+              harga
+              terjangkau hanya di Hari Guru ini!</p>
           </div>
           <div class="relative z-40 w-full flex lg:justify-start justify-center px-10 lg:px-0"
             onclick="location.href = '#product'">
             <button
-              class="w-full lg:w-auto px-5 py-2 bg-white text-[#D22E2E] rounded-3xl transition-all duration-200 border-b-8 border-black hover:border-red-500">
+              class="w-full lg:w-auto px-5 py-2 bg-white text-[#30C5FF] rounded-3xl transition-all duration-200 border-b-8 border-black hover:border-[#30C5FF]">
               <span>Selengkapnya...</span>
             </button>
           </div>
         </div>
-        <div class="flex justify-center pt-5 min-[380px]:pt-20 lg:pt-0">
-          <img src="./assets/hero-79.svg" alt="79 Dirgahayu" class="w-[200px] min-[450px]:w-[300px] lg:w-auto"></img>
+        <br>
+        <div class="flex justify-center">
+          <img src="./assets/hero-hutpgri.svg" alt="HUTPGRI"
+            class="w-[200px] min-[450px]:w-[300px] lg:w-auto animate-bouncy"></img>
         </div>
       </div>
     </section>
-    <section id="product" class="relative z-20 bg-[#F3F4E5] pb-20 py-0 lg:py-10 w-full">
-      <img src="./assets/style.svg" alt="" class="absolute right-0 z-20 w-[200px] lg:w-auto" data-aos="fade-left"
-        data-aos-duration="1000">
-      <img src="./assets//style2.svg" alt=""
-        class="absolute left-0 top-[-100px] lg:top-[-300px] z-20 w-[200px] lg:w-auto" data-aos="fade-right"
-        data-aos-duration="1000">
+    <section id="product" class="relative z-20 bg-[#F3F4E5] pb-20 w-full">
+      <img src="./assets/style.svg" alt="..." class="absolute right-0 z-20 w-[200px] lg:w-auto animate-bouncy2"
+        data-aos="fade-left" data-aos-duration="1000">
+      <img src="./assets//style2.svg" alt="..."
+        class="absolute left-[-80px] sm:left-0 top-[-100px] lg:top-[-230px] z-20 w-[200px] lg:w-auto animate-bouncy2"
+        data-aos="fade-right" data-aos-duration="1000">
       <svg class="2xl:block hidden relative top-[-180px] lg:top-[-150px] w-[1940px] h-[213px]" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_604_107)">
@@ -96,34 +103,81 @@
           </filter>
         </defs>
       </svg>
-      <div class="relative z-40 min-[1280px]:max-w-[1280px] flex flex-col gap-20 mx-auto">
+      <div class="relative z-40 min-[1280px]:max-w-[1280px] flex flex-col gap-10 mx-auto">
         <div class="flex flex-row justify-center items-center pb-20 lg:pt-0 relative z-40">
-          <img src="./assets/sayap-kiri.svg" alt="" class="hidden sm:block" data-aos="flip-left"
-            data-aos-duration="2000">
-          <h3 class="font-semibold text-xl md:text-2xl text-center desc" data-aos="fade">Produk Kami</h3>
-          <img src="./assets/sayap-kanan.svg" alt="" class="hidden sm:block" data-aos="flip-left"
-            data-aos-duration="2000">
+          <img src="./assets/sayap-kiri.svg" alt="..."
+            class="sm:block relative bottom-4 w-20 animate-bouncy2 animate-spin">
+          <h3 class="font-semibold text-xl md:text-3xl text-center desc" data-aos="fade">Produk Kami</h3>
+          <img src="./assets/sayap-kanan.svg" alt="..."
+            class="sm:block relative top-4 w-20 animate-bouncy2 animate-spin">
         </div>
-        <div class="flex flex-col lg:flex-row items-center gap-10 px-5 sm:px-20">
-          <div class="flex flex-col items-center justify-center gap-4">
-            <img src="./assets/galeri-produk/produk-desain.png" alt="" data-aos="zoom-out" data-aos-duration="1000">
-            <p class="text-[12px] sm:text-md md:text-xl text-center px-2 lg:px-2 font-bold" data-aos="fade"
-              data-aos-duration="1000">Berbahan Soft Cotton 24S, sehingga nyaman dan lembut saat dipakai</p>
+        <div
+          class="tabe w-full max-w-[400px] sm:max-w-[600px] lg:max-w-[600px] min-[1280px]:max-w-[728px] mx-auto shadow-md transition duration-200 ease-in-out"
+          data-aos="fade">
+          <h3 class="activet">Bantal</h3>
+          <h3>Totebag</h3>
+          <h3>Payung</h3>
+        </div>
+        <div class="tab-contents">
+          <div class="activet">
+            <div class="flex flex-col lg:flex-row items-center gap-10 px-5 sm:px-20">
+              <div class="flex flex-col items-center justify-center gap-4">
+                <img src="./assets/galeri-produk/bantal/produk-utama.png" alt="..." data-aos="zoom-out"
+                  data-aos-duration="1000">
+                <p class="text-[12px] sm:text-md md:text-xl text-center px-2 lg:px-2 font-medium text-gray-500"
+                  data-aos="fade" data-aos-duration="1000">Berbahan Soft Cotton 24S, sehingga nyaman dan lembut saat
+                  dipakai</p>
+              </div>
+              <div class="text-sm sm:text-xl lg:w-[1200px] text-center lg:text-end font-medium lg:leading-7"
+                data-aos="fade-up" data-aos-duration="1000">
+                <p>Rasakan kenyamanan dalam desain yang elegan! Dengan desain modern dan material berkualitas. Membuat
+                  bantal ini meenjadi
+                  pilihan menarik untuk hadiah di hari guru.</p>
+              </div>
+            </div>
           </div>
-          <div class="text-sm sm:text-xl lg:indent-8 lg:w-[1200px] text-center font-medium lg:leading-7"
-            data-aos="fade-up" data-aos-duration="1000">
-            <p>Koleksi baju kemerdekaan kami yang dirancang khusus untuk memperingati dan merayakan hari bersejarah 17
-              Agustus. Dengan
-              desain yang menggabungkan nuansa tradisional dan modern serta Menggunakan Kaos Cotton Combed 24s sehingga
-              kaos lebih halus, nyaman dan
-              menyerap keringat</p>
+          <div>
+            <div class="flex flex-col lg:flex-row items-center gap-10 px-5 sm:px-20">
+              <div class="flex flex-col items-center justify-center gap-4">
+                <img src="./assets/galeri-produk/totebag/produk-desain.png" alt="..." data-aos="zoom-out"
+                  data-aos-duration="1000">
+                <span class="text-[12px] sm:text-md md:text-xl text-center px-2 lg:px-2 font-medium text-gray-500"
+                  data-aos="fade" data-aos-duration="1000">Berbahan Soft Cotton 24S, sehingga nyaman dan lembut saat
+                  dipakai</span>
+              </div>
+              <div class="text-sm sm:text-xl lg:w-[1200px] text-center lg:text-end font-medium lg:leading-7"
+                data-aos="fade-up" data-aos-duration="1000">
+                <p>Praktis, stylish, dan tahan lama! Totebag ini dibuat dengan material premium yang kokoh serta
+                  dilengkapi dengan desain
+                  modern yang cocok untuk berbagai kesempatan. Ideal untuk menemani aktivitas harian atau sebagai hadiah
+                  spesial di hari
+                  guru.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col lg:flex-row items-center gap-10 px-5 sm:px-20">
+              <div class="flex flex-col items-center justify-center gap-4">
+                <img src="./assets/galeri-produk/payung/produk-desain.png" alt="..." data-aos="zoom-out"
+                  data-aos-duration="1000">
+                <p class="text-[12px] sm:text-md md:text-xl text-center px-2 lg:px-2 font-medium text-gray-500"
+                  data-aos="fade" data-aos-duration="1000">Berbahan Soft Cotton 24S, sehingga nyaman dan lembut saat
+                  dipakai</p>
+              </div>
+              <div class="text-sm sm:text-xl lg:w-[1200px] text-center lg:text-end font-medium lg:leading-7"
+                data-aos="fade-up" data-aos-duration="1000">
+                <p>Lindungi diri Anda dengan gaya! Payung kami hadir dengan desain elegan dan bahan berkualitas tinggi
+                  yang tahan lama.
+                  Cocok digunakan saat hujan maupun panas, payung ini juga menjadi hadiah menarik untuk hari guru.</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <img src="./assets//style3.svg" alt="" class="absolute right-0 z-20 w-[200px] lg:w-auto" data-aos="fade-left"
-        data-aos-duration="1000">
     </section>
-    <section class="bg-[url('./assets/promo-produk.svg')] bg-[#D22E2E] w-full bg-cover pb-40">
+    <section class="bg-[url('./assets/promo-produk.svg')] bg-[#30C5FF] w-full bg-cover pb-40">
+      <img src="./assets//style3.svg" alt="..."
+        class="absolute right-[-40px] lg:right-0 z-20 w-[200px] lg:w-auto animate-bouncy2" data-aos="fade-left"
+        data-aos-duration="1000">
       <svg class="2xl:block hidden relative top-[-180px] lg:top-[-100px] w-[1940px] h-[213px]" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_604_107)">
@@ -164,81 +218,65 @@
           </filter>
         </defs>
       </svg>
-      <img src="./assets//style4.svg" alt="" class="absolute left-0 z-20 w-[200px] lg:w-auto" data-aos="fade-right"
+      <img src="./assets//style4.svg" alt="..."
+        class="absolute left-[-120px] lg:left-0 z-10 w-[200px] lg:w-auto animate-bouncy2" data-aos="fade-right"
         data-aos-duration="1000">
       <h1
         class="text-xl lg:text-2xl text-center font-bold text-white drop-shadow-xl pb-10 promo relative z-20 text-shadow"
         data-aos="fade-left" data-aos-duration="1000">
-        Promo Kaos Anak dan Dewasa
+        Promo Bantal, Totebag, dan Payung dengan Berbagai Warna
       </h1>
       <div class="w-full flex justify-center items-center mx-auto pb-6">
         <div class="py-2 px-5 border-y-4 border-[#F3F4E5]">
-          <h3 class="text-md lg:text-xl text-white font-bold" data-aos="zoom-out" data-aos-duration="1000">17 Agustus
+          <h3 class="text-md lg:text-xl text-white font-bold" data-aos="zoom-out" data-aos-duration="1000">HUT PGRI
           </h3>
         </div>
       </div>
-      <h3 data-aos="fade-left" data-aos-duration="1000"
-        class="text-md lg:text-xl text-center font-medium text-white drop-shadow-xl pb-10 promo relative z-20 text-shadow italic">
-        Menerima custom desain kaos eceran dan grosir <strong>(harga lebih murah)</strong></h3>
+      <div class="w-full flex justify-center">
+        <h3 data-aos="fade-left" data-aos-duration="1000"
+          class="text-md lg:text-xl w-60 sm:w-80 lg:w-auto text-center font-medium text-white drop-shadow-xl pb-10 promo relative z-20 text-shadow italic">
+          Menerima custom desain bantal eceran dan grosir <strong>(harga lebih murah)</strong></h3>
+      </div>
       <div class="w-full mx-auto relative z-30" data-aos="zoom-out" data-aos-duration="1000">
         <div class="lg:max-w-[600px] min-[1280px]:max-w-[728px] mx-auto">
-          <div id="indicators-carousel" class="relative" data-carousel="static">
-            <!-- Carousel wrapper -->
-            <div class="relative h-80 lg:h-56 overflow-hidden rounded-lg lg:h-96">
-              <!-- Item 1 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                <img src="./assets/galeri-produk/produk-desain.png"
+          <div class="swiper mySwiper  h-80 lg:h-56 overflow-hidden rounded-lg lg:h-96">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/galeri-produk/bantal/produk-desain.png"
                   class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mx-auto" alt="...">
               </div>
-              <!-- Item 2 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="./assets/galeri-produk/produk-desain2.png"
+              <div class="swiper-slide">
+                <img src="./assets/galeri-produk/bantal/produk-desain.png"
                   class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mx-auto" alt="...">
               </div>
-              <!-- Item 3 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="./assets/galeri-produk/produk-desain3.png"
+              <div class="swiper-slide">
+                <img src="./assets/galeri-produk/bantal/produk-desain2.png"
                   class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mx-auto" alt="...">
               </div>
-              <!-- Item 4 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="./assets/galeri-produk/produk-desain4.png"
+              <div class="swiper-slide">
+                <img src="./assets/galeri-produk/bantal/produk-desain3.png"
                   class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mx-auto" alt="...">
               </div>
-              <!-- Item 5 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="./assets/galeri-produk/produk-desain5.png"
+              <div class="swiper-slide">
+                <img src="./assets/galeri-produk/bantal/produk-desain4.png"
                   class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mx-auto" alt="...">
               </div>
-              <!-- Item 6 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="./assets/galeri-produk/produk-desain6.png"
+              <div class="swiper-slide">
+                <img src="./assets/galeri-produk/totebag/produk-desain5.png"
                   class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mx-auto" alt="...">
               </div>
-              <!-- Item 7 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="./assets/galeri-produk/produk-desain7.png"
+              <div class="swiper-slide">
+                <img src="./assets/galeri-produk/totebag/produk-desain6.png"
+                  class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mx-auto" alt="...">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/galeri-produk/totebag/produk-desain7.png"
+                  class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mx-auto" alt="...">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/galeri-produk/payung/produk-desain.png"
                   class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mx-auto" alt="...">
               </div>
             </div>
-            <!-- Slider indicators -->
-            <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                data-carousel-slide-to="0"></button>
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                data-carousel-slide-to="1"></button>
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                data-carousel-slide-to="2"></button>
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                data-carousel-slide-to="3"></button>
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                data-carousel-slide-to="4"></button>
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                data-carousel-slide-to="5"></button>
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                data-carousel-slide-to="6"></button>
-            </div>
-            <!-- Slider controls -->
             <button type="button"
               class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
               data-carousel-prev>
@@ -265,14 +303,16 @@
                 <span class="sr-only">Next</span>
               </span>
             </button>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
     </section>
     <section class="bg-[#F3F4E5] relative z-10 pb-20 w-full bg-cover">
-      <img src="./assets/style.svg" alt="" class="absolute right-0 z-20 w-[200px] lg:w-auto" data-aos="fade-left"
-        data-aos-duration="1000">
-      <img src="./assets//style2.svg" alt="" class="absolute left-0 z-20 w-[200px] lg:w-auto" data-aos="fade-right"
+      <img src="./assets/style.svg" alt="..." class="absolute right-0 z-20 w-[200px] lg:w-auto animate-bouncy2"
+        data-aos="fade-left" data-aos-duration="1000">
+      <img src="./assets//style2.svg" alt="..."
+        class="absolute left-[-80px] sm:left-0 z-20 w-[200px] lg:w-auto animate-bouncy2" data-aos="fade-right"
         data-aos-duration="1000">
       <svg class="2xl:block hidden relative top-[-180px] lg:top-[-100px] w-[1940px] h-[213px]" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -315,14 +355,16 @@
         </defs>
       </svg>
       <div class="flex flex-row justify-center items-center pb-20 lg:pt-0 relative z-40">
-        <img src="./assets/sayap-kiri.svg" alt="" class="hidden sm:block" data-aos="flip-left" data-aos-duration="2000">
+        <img src="./assets/sayap-kiri.svg" alt="..." class="hidden sm:block" data-aos="flip-left"
+          data-aos-duration="2000">
         <h3 class="font-semibold text-xl md:text-2xl text-center desc" data-aos="zoom-out" data-aos-duration="1000">
           Bahan
           Soft Katun 24S</h3>
-        <img src="./assets/sayap-kanan.svg" alt="" class="hidden sm:block" data-aos="flip-left"
+        <img src="./assets/sayap-kanan.svg" alt="..." class="hidden sm:block" data-aos="flip-left"
           data-aos-duration="2000">
       </div>
-      <div class="flex flex-col justify-center items-center sm:px-0 relative z-40" data-aos="fade-up" data-aos-duration="1000">
+      <div class="flex flex-col justify-center items-center sm:px-0 relative z-40" data-aos="fade-up"
+        data-aos-duration="1000">
         <h4 class="desc text-sm sm:text-md md:text-xl px-10 lg:px-0 sm:w-[800px] text-center font-bold">
           Kain Cotton Combed 24s merupakan kain yang
           terbuat dari serat kapas murni
@@ -338,9 +380,9 @@
 
         <!-- Table 1 -->
         <div class="w-full px-10 lg:w-1/2 overflow-hidden" data-aos="fade-up-right" data-aos-duration="1000">
-          <div class="bg-red-600 text-white text-center py-2 font-semibold">Size Dewasa</div>
+          <div class="bg-[#30C5FF] text-white text-center py-2 font-semibold">Size Dewasa</div>
           <table class="min-w-full divide-y divide-gray-300">
-            <thead class="bg-red-600 text-white">
+            <thead class="bg-[#30C5FF] text-white">
               <tr>
                 <th class="text-[14px] min-[450px]:text-md px-0 min-[450px]:px-10 md:px-12 py-2">Size</th>
                 <th class="text-[14px] min-[450px]:text-md px-2 sm:pr-4 py-2">Dimensi Lebar dada x panjang</th>
@@ -389,9 +431,9 @@
 
         <!-- Table 2 -->
         <div class="w-full px-10 lg:w-1/2 overflow-hidden" data-aos="fade-up-left" data-aos-duration="1000">
-          <div class="bg-red-600 text-white text-center py-2 font-semibold">Size Anak</div>
+          <div class="bg-[#30C5FF] text-white text-center py-2 font-semibold">Size Anak</div>
           <table class="min-w-full divide-y divide-gray-300">
-            <thead class="bg-red-600 text-white">
+            <thead class="bg-[#30C5FF] text-white">
               <tr>
                 <th class="text-[14px] min-[450px]:text-md px-5 min-[450px]:px-7 md:px-0 md:pl-4 md:pr-20 lg:pr-4 py-2">
                   Size</th>
@@ -426,117 +468,36 @@
       </div>
     </section>
     <section class="bg-[#F3F4E5] relative z-10 py-20 w-full">
-      <div class="logos mb-40 shadow-xl shadow-red-400">
+      <div class="logos mb-40 shadow-xl shadow-[#30C5FF]">
         <div class="logos-slide">
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
-          <img src="./assets/indonesia.png" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
+          <img src="./assets/hut-pgri.png" alt="hut-pgri" />
         </div>
       </div>
-      <img src="./assets/style4.svg" alt="" class="absolute left-0 z-20 w-[200px] lg:w-auto" data-aos="fade-right" data-aos-duration="1000">
-      <img src="./assets/style3.svg" alt="" class="absolute right-0 z-20 w-[200px] lg:w-auto" data-aos="fade-left" data-aos-duration="1000">
-      <div class="flex flex-row justify-center items-center pb-20 lg:pt-0 relative z-40">
-        <img src="./assets/sayap-kiri.svg" alt="" class="hidden sm:block" data-aos="flip-left" data-aos-duration="2000">
-        <h3 class="font-semibold text-xl md:text-2xl text-center desc" data-aos="fade" data-aos-duration="1000">E-Money
-          Custom Berkualitas Tinggi</h3>
-        <img src="./assets/sayap-kanan.svg" alt="" class="hidden sm:block" data-aos="flip-left"
-          data-aos-duration="2000">
-      </div>
-      <div class="flex flex-col justify-center pb-20 items-center sm:px-0 relative z-40">
-        <h4 class="desc text-sm sm:text-md md:text-xl px-10 lg:px-0 sm:w-[800px] text-center font-bold"
-          data-aos="zoom-out" data-aos-duration="1000">
-          Tersedia E-Money custom dengan berbagai desain menarik. Proses cetak menggunakan UV Printing (bukan
-          stiker/garskin),
-          menghasilkan gambar yang lebih tajam, berkualitas tinggi, bertekstur, dan tahan lama.</h4>
-      </div>
-      <div class="w-full mx-auto relative z-30 left-2" data-aos="zoom-out" data-aos-duration="1000">
-        <div class="lg:max-w-[600px] min-[1280px]:max-w-[728px] mx-auto">
-          <div id="indicators-carousel" class="relative" data-carousel="static">
-            <!-- Carousel wrapper -->
-            <div class="relative h-80 lg:h-56 overflow-hidden rounded-lg lg:h-96">
-              <!-- Item 1 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                <img src="./assets/card-emoney/card-desain.png"
-                  class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mx-auto" alt="...">
-              </div>
-              <!-- Item 2 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="./assets/card-emoney/card-desain2.png"
-                  class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mx-auto" alt="...">
-              </div>
-              <!-- Item 3 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="./assets/card-emoney/card-desain3.png"
-                  class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mx-auto" alt="...">
-              </div>
-              <!-- Item 4 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="./assets/card-emoney/card-desain4.png"
-                  class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mx-auto" alt="...">
-              </div>
-            </div>
-            <!-- Slider indicators -->
-            <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                data-carousel-slide-to="0"></button>
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                data-carousel-slide-to="1"></button>
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                data-carousel-slide-to="2"></button>
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                data-carousel-slide-to="3"></button>
-            </div>
-            <!-- Slider controls -->
-            <button type="button"
-              class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-              data-carousel-prev>
-              <span
-                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white text-white-400 rtl:rotate-180" aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M5 1 1 5l4 4" />
-                </svg>
-                <span class="sr-only">Previous</span>
-              </span>
-            </button>
-            <button type="button"
-              class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-              data-carousel-next>
-              <span
-                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white text-white-400 rtl:rotate-180" aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m1 9 4-4-4-4" />
-                </svg>
-                <span class="sr-only">Next</span>
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <img src="./assets/style3.svg" alt="" class="absolute right-0 z-20 w-[200px] lg:w-auto" data-aos="fade-left" data-aos-duration="1000">
-      <img src="./assets//style4.svg" alt="" class="absolute left-0 z-20 w-[200px] lg:w-auto" data-aos="fade-right"
+      <img src="./assets/style4.svg" alt="..."
+        class="absolute left-[-120px] lg:left-0 z-20 w-[200px] lg:w-auto animte-bouncy2" data-aos="fade-right"
         data-aos-duration="1000">
+      <img src="./assets/style3.svg" alt="..." class="absolute right-0 z-20 w-[200px] lg:w-auto animte-bouncy2"
+        data-aos="fade-left" data-aos-duration="1000">
     </section>
-    <section class="bg-[url('./assets/contact.svg')] bg-[#D22E2E] bg-cover bg-left-top w-full pb-10">
+    <section class="bg-[url('./assets/contact.svg')] bg-[#30C5FF] bg-cover bg-left-top w-full pb-10">
       <svg class="2xl:block hidden relative top-[-180px] lg:top-[-100px] w-[1940px] h-[213px]" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_604_107)">
@@ -577,25 +538,24 @@
         </defs>
       </svg>
       <div class="flex flex-col justify-center items-center">
-        <img src="./assets/human.svg" alt="" class="relative z-20 w-[400px]" data-aos="fade-up"
+        <img src="./assets/human.svg" alt="..." class="relative z-20 w-[400px]" data-aos="fade-up"
           data-aos-duration="1000">
         <div class="flex justify-center items-center pb-20 relative z-20">
           <div class="py-10 px-10 bg-white shadow-xl shadow-black md:w-[500px] lg:w-[1000px] rounded-xl">
             <div class="flex flex-col gap-20">
-              <div class="flex flex-row items-center justify-between">
-                <div class="hidden md:block"></div>
-                <div class="hidden md:block"></div>
-                <h1 class="text-md min-[450px]:text-xl md:text-center font-semibold md:text-2xl">Contact Us</h1>
-                <div class="flex justify-end">
-                  <img src="./assets/79.svg" alt="79" class="w-[80px] sm:w-auto">
-                </div>
+              <div class="flex flex-row items-center justify-center">
+                <h1 class="text-md min-[450px]:text-xl lg:text-center font-semibold md:text-2xl w-full">Contact Us</h1>
+              </div>
+              <div class="absolute top-8 right-10">
+                <img src="./assets/79.svg" alt="79" class="w-[40px] sm:w-[80px] sm:w-auto animate-spin2">
               </div>
               <div class="flex flex-col lg:flex-row justify-center gap-20">
                 <div class="flex justify-center">
-                  <img src="./assets/logo.svg" alt=""
+                  <img src="./assets/logo.svg" alt="..."
                     class="w-[130px] min-[450px]:w-[150px] lg:w-[400px] 2xl:w-[900px]">
                 </div>
-                <div class="bg-black lg:h-[200px] p-[1px]"></div>
+                <div class="bg-black lg:h-[200
+                px] p-[1px]"></div>
                 <div class="flex flex-col items-center text-center gap-10">
                   <p class="text-[14px] min-[450px]:text-md sm:text-xl font-semibold">Kontak kami melalui Whatsapp untuk
                     order jauh lebih mudah, klik di
@@ -631,7 +591,7 @@
               </div>
               <div class="flex flex-row items-center justify-between">
                 <div>
-                  <img src="./assets/dirgahayu.svg" alt="dirgahayu" class="w-40 sm:w-60">
+                  <img src="./assets/HAPPY-TEACHER-DAY-TEXT-2.svg" alt="dirgahayu" class="w-40 sm:w-60">
                 </div>
                 <div class="flex items-center gap-4">
                   <div class="social-button">
@@ -682,24 +642,24 @@
           Ratusan Pesanan Per Hari Siap Dikirim dengan COD:</h1>
         <div class="logos">
           <div class="logos-slide">
-            <img src="./assets/cod-logo/sicepat.png" />
-            <img src="./assets/cod-logo/grab.png" />
-            <img src="./assets/cod-logo/jne.png" />
-            <img src="./assets/cod-logo/lion-parcel.png" />
-            <img src="./assets/cod-logo/j&t.png" />
-            <img src="./assets/cod-logo/jtr.png" />
-            <img src="./assets/cod-logo/sicepat.png" />
-            <img src="./assets/cod-logo/grab.png" />
-            <img src="./assets/cod-logo/jne.png" />
-            <img src="./assets/cod-logo/lion-parcel.png" />
-            <img src="./assets/cod-logo/j&t.png" />
-            <img src="./assets/cod-logo/jtr.png" />
-            <img src="./assets/cod-logo/sicepat.png" />
-            <img src="./assets/cod-logo/grab.png" />
-            <img src="./assets/cod-logo/jne.png" />
-            <img src="./assets/cod-logo/lion-parcel.png" />
-            <img src="./assets/cod-logo/j&t.png" />
-            <img src="./assets/cod-logo/jtr.png" />
+            <img src="./assets/cod-logo/sicepat.png" alt="delivery" />
+            <img src="./assets/cod-logo/grab.png" alt="delivery" />
+            <img src="./assets/cod-logo/jne.png" alt="delivery" />
+            <img src="./assets/cod-logo/lion-parcel.png" alt="delivery" />
+            <img src="./assets/cod-logo/j&t.png" alt="delivery" />
+            <img src="./assets/cod-logo/jtr.png" alt="delivery" />
+            <img src="./assets/cod-logo/sicepat.png" alt="delivery" />
+            <img src="./assets/cod-logo/grab.png" alt="delivery" />
+            <img src="./assets/cod-logo/jne.png" alt="delivery" />
+            <img src="./assets/cod-logo/lion-parcel.png" alt="delivery" />
+            <img src="./assets/cod-logo/j&t.png" alt="delivery" />
+            <img src="./assets/cod-logo/jtr.png" alt="delivery" />
+            <img src="./assets/cod-logo/sicepat.png" alt="delivery" />
+            <img src="./assets/cod-logo/grab.png" alt="delivery" />
+            <img src="./assets/cod-logo/jne.png" alt="delivery" />
+            <img src="./assets/cod-logo/lion-parcel.png" alt="delivery" />
+            <img src="./assets/cod-logo/j&t.png" alt="delivery" />
+            <img src="./assets/cod-logo/jtr.png" alt="delivery" />
           </div>
         </div>
       </div>
@@ -720,7 +680,20 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="./script.js">
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '[data-carousel-next]',
+        prevEl: '[data-carousel-prev]',
+      },
+    });
   </script>
 </body>
 
