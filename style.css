@@ -7,7 +7,7 @@
 
 header.scrolled {
 	background-color: #f3f4e5f7;
-	color: #30C5FF !important;
+	color: #7593C4 !important;
 }
 
 .box-shadow {
@@ -19,7 +19,7 @@ header.scrolled {
 }
 
 .text-produk {
-	text-shadow: 2px 2px #30C5FF;
+	text-shadow: 2px 2px #7593C4;
 }
 .text-shadow {
 	text-shadow: 4px 4px #000000;
@@ -41,7 +41,7 @@ header.scrolled {
 	height: 42px;
 	align-items: center;
 	justify-content: center;
-	background-color: #30C5FF;
+	background-color: #7593C4;
 	color: white;
 	cursor: pointer;
 	border: none;
@@ -199,7 +199,7 @@ header.scrolled {
 }
 .tabs .active {
 	transition: all .5s;
-  background-color: #30C5FF;
+  background-color: #7593C4;
   color: #ffffff;
 }
 
@@ -241,7 +241,7 @@ header.scrolled {
 }
 .tabe .activet {
 	transition: all .5s;
-  background-color: #30C5FF;
+  background-color: #7593C4;
   color: #ffffff;
 }
 
